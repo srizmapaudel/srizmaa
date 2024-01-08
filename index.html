@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>My webpage</title>
+             <style>
+                body{
+                    display:flex;
+                    flex-direction:column;
+                    gap:10px;
+                    padding:10px;
+                }
+    .button{
+        height:fit--content;
+        background:green;
+        color: #fff;
+        border:1px solid green;
+        border-radius:10px;
+        padding:10px 20px;
+        text-transform:uppercase;
+        cursor:pointer;
+    }
+    button:hover{
+        opacity:0.6;
+
+    }
+    .button1{
+        background: red;
+        border:1px solid red;
+
+    }
+    .button2{
+        background: green;
+        border: 1px solid green;
+
+    }
+    #button1{
+        font-size:20ps;
+    }
+    #button2{
+        font-size:20ps;
+    }
+</style>
+
+</head>
+<body>
+    <button
+      onclick="alert('hello')"
+      class="button button1"
+      id=""button1"
+      ></button>
+    test 1
+</botton>
+<button
+    ondbclick="alert('clicked 2 times')"
+    class=""button button2" id=""button2>
+test 2
+</button>
+<img src="srizma.png"
+width="200px"
+height="200px"
+alt="Image"
+>
+<div id="time">
+    <script>
+        let timeElem=document.getElementById('time');
+        setInterval(()=>{
+        console.log();
+        timeElem.innerText=new Date().toLocaleString();
+    },500); //500ms
+    </script>
+
+</div>
+<script>
+
+
+</script>
+hello
+
+
+</div>
+
+
+</body>
+</html>
