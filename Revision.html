@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Higher order function because it takes another function as an argument
+        const someFunc = (a, b, resultFunc) => {
+            resultFunc(a + b);
+        }
+
+        const printResult = (result) => {
+            //alert(result);
+        }
+
+        // Passing callback printResult to someFunc
+        someFunc(20, 10, printResult);
+
+        let a = 10;
+        let b = a > 5 ? 20 : 30;
+        let c = a % 2 == 0 ? "EVEN" : "ODD";
+        let d = a / 2;
+        // Ternary operator kei value huncha ani kei condition
+    </script>
+
+    <script>
+        function getDay(day) {
+            switch (day) {
+                case 0:
+                    return "Sunday";
+            }
+        }
+
+        function getFruitOrVeggies(val) {
+            let result;
+
+            switch (val) {
+                case "Apple":
+                case "Banana":
+                    result = "Fruit";
+                    break;
+                case "Cauli":
+                    result = "Veggies";
+                    break;
+                default:
+                    result = "Neither fruit nor veggies";
+            }
+
+            return result;
+        }
+
+        let today = getDay(new Date().getDay());
+        console.log(today);
+        console.log(getFruitOrVeggies("Apple"));
+        console.log(getFruitOrVeggies("Banana"));
+        console.log(getFruitOrVeggies("Chocolate"));
+    </script>
+
+    <div>
+        <div id ="someId"></div> </div>
+        <script>
+            //DOM SELECTORS
+            let elem=document.getElementById("someId")
+            elem.innerText
+        
+        elem.innerText="Hello World";
+        let elem2=document.getElementByClassName('someClass');
+        let arrayElem2=[...elem2]
+        arrayElem2.forEach(item=>item.innerText="Ram")
+        console.log(arrayElem2);
+
+
+    </script>
+    <div class="someClass"></div>
+    <div class="someId"></div>
+
+
+
+    <script>
+        let aElem=document.querySelectpr('#aWrapper a');
+        aElem.innerText="https://google.com"
+        aElem.innerHtml="https://google.com"
+
+    </script>
+    <script>
+    let student={
+        name:"Ram",
+        id:"15BCS2364",
+        roll:"200",
+        getSubjects:(stream)=>{
+            let subjects=['physics','chemistry','maths']
+            if(stream==="BIO"){
+                subjects.push("BIOLOGY")
+            }
+        
+        return subjects;
+        }
+
+    }
+    student.id="1236812638"
+    console.log(student.id);
+    console.log(student.getSubjects("Physics"));
+    </script>
+    <body>
+
+    
+<script src="friends.js"></script>
+<div id="friendsWrapper"></div>
+</body>
+</body>
+</html>
